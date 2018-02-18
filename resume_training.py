@@ -489,15 +489,11 @@ while(1):
 			print('Evaluation (Total Test ) :: '+str(25000)+' Model got Right :: '+str(acc_sum_b) +' Accuracy Percentage :: '+str(acc_sum_b/25000.0) )
 			
 			for param_group in optimizer.param_groups:
-        			param_group['lr'] = param_group['lr']/1.01
+        			param_group['lr'] = param_group['lr']/1.05
 			
 	
 		k_z=k_z+1;
 	
-
-
-
-
 
 		print(':: Iteration Number :: ',k_z)
 		print(':: Loss on Current Training Batch (8) :: ',sumloss)
